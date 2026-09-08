@@ -37,7 +37,7 @@ class HomeScreen extends StatelessWidget {
 
                   // section header row
                   const SectionHeaderRow(),
-
+                  10.verticalSpace,
                   // GridView Items
                   ProductGridSection(controller: controller),
                 ],

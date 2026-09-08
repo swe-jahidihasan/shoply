@@ -3,6 +3,8 @@ import 'package:get/get.dart';
 
 class ProfileController extends GetxController {
 
+
+  /// ====================== all controller ==================================
   final nameCtr = TextEditingController();
   final phoneCtr = TextEditingController();
   final streetCtr = TextEditingController();
@@ -11,20 +13,22 @@ class ProfileController extends GetxController {
   final stateCtr = TextEditingController();
   final countryCtr = TextEditingController();
 
-
-  // TODO: Add your observable variables here
-
+  /// ====================== observable variable ============================
   var isSelectedCard = 0.obs;
 
 
+  /// =================== getter method ==================================
   int get  selectedCard => isSelectedCard.value;
 
 
+  /// =====================  method =======================================
   void onSelectAddressCard(int index){
     isSelectedCard.value = index;
   }
 
 
+
+  /// ==================== controller dispose method =======================
   @override
   void onClose() {
     // TODO: implement onClose

@@ -31,7 +31,7 @@ class SectionHeader extends StatelessWidget {
             onTap: onViewAllTap,
             child: Text(
               "View all",
-              style: context.tt.labelLarge?.copyWith(color: JColors.primary),
+              style: context.tt.labelLarge?.copyWith(color: JColors.primary,decoration: TextDecoration.underline),
             ),
           ),
         ],

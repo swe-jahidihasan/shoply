@@ -55,7 +55,6 @@ class SplashController extends GetxController {
     }
   }
 
-
   // skip method
   void skip() {
     _isCurrentPage.value = 0;

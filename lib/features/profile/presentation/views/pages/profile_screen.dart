@@ -120,7 +120,7 @@ class ProfileScreen extends StatelessWidget {
                   ...profileItem.map(
                     (item) => ListTile(
                       onTap: item["onTap"],
-                      leading: Icon(CupertinoIcons.home, size: JSizes.iconMd.r),
+                      leading: Icon(item["icon"], size: JSizes.iconMd.r),
                       title: Text(item["title"], style: context.tt.titleLarge),
                       subtitle: Text(
                         item["subtitle"],

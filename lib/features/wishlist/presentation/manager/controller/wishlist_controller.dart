@@ -53,8 +53,4 @@ class WishlistController extends GetxController {
       "brand": "Bata",
     },
   ];
-
-// TODO: Add your observable variables here
-  
-  // TODO: Add your methods here
 }

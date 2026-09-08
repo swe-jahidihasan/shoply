@@ -9,7 +9,10 @@ class JInputField extends StatelessWidget {
     required this.hintText,
     this.suffixIcon,
     this.inputType = TextInputType.text,
-    this.validator, this.prefixIcon,  this.readOnly = false,  this.onTap,
+    this.validator,
+    this.prefixIcon,
+    this.readOnly = false,
+    this.onTap,
   });
 
   final TextEditingController controller;
@@ -22,7 +25,6 @@ class JInputField extends StatelessWidget {
   final TextInputType inputType;
   final VoidCallback? onTap;
   final String? Function(String?)? validator;
-
 
   @override
   Widget build(BuildContext context) {

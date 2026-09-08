@@ -4,15 +4,17 @@ import 'package:flutter/material.dart';
 import 'package:shoply/core/constants/app_assets.dart';
 
 class HomeController extends GetxController {
-  // TODO: controller
+
+  /// all controller
   late PageController pageCtr;
 
   /// observable variable
   var _isCurrentPage = 0.obs;
   Timer? _timer;
 
-  /// todo : getter method
+  /// getter method
   int get currentPage => _isCurrentPage.value;
+
 
   /// todo : on init method
   @override

@@ -55,12 +55,19 @@ class StoreController extends GetxController {
     },
   ];
 
+
+  /// ====================== controller =======================================
   final scrollCtr = ScrollController();
 
+
+  ///  ================== private observable variable =========================
   var _isScroll = false.obs;
 
+  /// ===================== getter variable ==================================
   bool get isScroll => _isScroll.value;
 
+
+  /// =================== method ============================================
   @override
   void onInit() {
     // TODO: implement onInit
@@ -79,6 +86,8 @@ class StoreController extends GetxController {
     super.onInit();
   }
 
+
+  /// ==================== controller dispose ==========================
   @override
   void onClose() {
     // TODO: implement onClose

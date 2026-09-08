@@ -7,15 +7,13 @@ class JElevatedButton extends StatelessWidget {
   const JElevatedButton({
     super.key,
     required this.onPressed,
-    this.child,
-    required this.buttonText,
-    this.bgColor,
+    required this.buttonText, this.child,
   });
 
+
+  final VoidCallback? onPressed;
   final String buttonText;
   final Widget? child;
-  final VoidCallback onPressed;
-  final Color? bgColor;
 
   @override
   Widget build(BuildContext context) {
@@ -24,21 +22,13 @@ class JElevatedButton extends StatelessWidget {
       width: double.infinity,
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
+          backgroundColor: JColors.primary,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(8.r),
           ),
-          backgroundColor: bgColor,
         ),
         onPressed: onPressed,
-        child:
-            child ??
-            Text(
-              buttonText,
-              style: context.tt.bodyLarge?.copyWith(
-                color: JColors.white,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
+        child: child ?? Text(buttonText, style: TextStyle(fontSize: 16.spMin)),
       ),
     );
   }
