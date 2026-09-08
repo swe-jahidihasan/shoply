@@ -7,7 +7,7 @@ class HomeController extends GetxController {
   // TODO: controller
   late PageController pageCtr;
 
-  /// todo : observable variable
+  /// observable variable
   var _isCurrentPage = 0.obs;
   Timer? _timer;
 
