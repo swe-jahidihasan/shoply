@@ -10,7 +10,7 @@ class BackgroundShapesTop extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 100.h,
-      width: 120.w,
+      width: 110.w,
       decoration: BoxDecoration(
         color: const Color(0xFF5285B4).withValues(alpha: 0.4),
         borderRadius: BorderRadius.only(

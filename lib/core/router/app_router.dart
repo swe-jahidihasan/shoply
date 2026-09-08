@@ -35,7 +35,7 @@ class AppRouter {
   static GoRouter get router => _router;
 
   static final GoRouter _router = GoRouter(
-    initialLocation: '/main-bottom-nav',
+    initialLocation: '/',
     debugLogDiagnostics: false,
     routes: [
       // splash

@@ -24,7 +24,9 @@ class VerifyEmailAddressScreen extends StatelessWidget {
               Align(
                 alignment: Alignment.centerRight,
                 child: IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    AppRouter.pop();
+                  },
                   icon: Icon(Icons.close, size: JSizes.iconMd.r),
                 ),
               ),

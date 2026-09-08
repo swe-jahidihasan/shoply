@@ -25,7 +25,9 @@ class ForgotPasswordScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  AppRouter.pop();
+                },
                 icon: Icon(Icons.arrow_back, size: JSizes.iconMd.r),
               ),
               24.verticalSpace,

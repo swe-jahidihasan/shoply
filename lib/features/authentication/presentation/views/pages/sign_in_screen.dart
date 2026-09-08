@@ -4,14 +4,12 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:shoply/core/common/widgets/button/elevated_button.dart';
 import 'package:shoply/core/common/widgets/button/outline_button.dart';
-import 'package:shoply/core/common/widgets/check_box.dart';
 import 'package:shoply/core/common/widgets/input_field.dart';
-import 'package:shoply/core/helpers/extensions.dart';
-import 'package:shoply/core/router/app_router.dart';
 import 'package:shoply/core/constants/app_assets.dart';
-import 'package:shoply/core/constants/colors.dart';
 import 'package:shoply/core/constants/sizes.dart';
 import 'package:shoply/core/constants/texts.dart';
+import 'package:shoply/core/helpers/extensions.dart';
+import 'package:shoply/core/router/app_router.dart';
 import 'package:shoply/features/authentication/presentation/manager/controller/sign_in_controller.dart';
 import 'package:shoply/features/authentication/presentation/views/widgets/auth_container.dart';
 import 'package:shoply/features/authentication/presentation/views/widgets/remember_and_forgot_pass.dart';
@@ -60,7 +58,9 @@ class SignInScreen extends StatelessWidget {
               16.verticalSpace,
 
               // todo: sign in && create button
-              JElevatedButton(onPressed: () {}, buttonText: JText.signIn),
+              JElevatedButton(onPressed: () {
+                AppRouter.pushNamed("main-bottom-nav");
+              }, buttonText: JText.signIn),
               5.verticalSpace,
               JOutlineButton(
                 onPressed: () {

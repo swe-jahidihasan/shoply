@@ -15,7 +15,7 @@ class BackgroundShapesBottom extends StatelessWidget {
         bottomRight: Radius.circular(100.r),
       ),
       child: Container(
-        height: 180.h,
+        height: 170.h,
         width: 100.w,
         decoration: BoxDecoration(
           color: const Color(0xFF5285B4).withValues(alpha: 0.4),

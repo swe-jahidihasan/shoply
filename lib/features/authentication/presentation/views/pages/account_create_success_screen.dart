@@ -4,6 +4,7 @@ import 'package:shoply/core/common/widgets/button/elevated_button.dart';
 import 'package:shoply/core/helpers/extensions.dart';
 import 'package:shoply/core/constants/app_assets.dart';
 import 'package:shoply/core/constants/texts.dart';
+import 'package:shoply/core/router/app_router.dart';
 
 class AccountCreateSuccessScreen extends StatelessWidget {
   const AccountCreateSuccessScreen({super.key});
@@ -38,7 +39,9 @@ class AccountCreateSuccessScreen extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               24.verticalSpace,
-              JElevatedButton(onPressed: () {}, buttonText: JText.done),
+              JElevatedButton(onPressed: () {
+                AppRouter.goNamed("signIn");
+              }, buttonText: JText.done),
             ],
           ),
         ),

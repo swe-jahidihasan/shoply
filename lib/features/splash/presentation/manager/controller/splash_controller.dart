@@ -59,7 +59,7 @@ class SplashController extends GetxController {
   // skip method
   void skip() {
     _isCurrentPage.value = 0;
-    AppRouter.goNamed("login");
+    AppRouter.goNamed("signIn");
   }
 
   @override

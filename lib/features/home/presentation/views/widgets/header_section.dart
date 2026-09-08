@@ -45,10 +45,10 @@ class HomeHeaderSection extends StatelessWidget {
               // Topbar  Content
               Padding(
                 padding: EdgeInsets.only(
-                  top: 40.h,
+                  top: 20.h,
                   left: 20.w,
                   right: 20.w,
-                  bottom: 30.h,
+                  bottom: 20.h,
                 ),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,

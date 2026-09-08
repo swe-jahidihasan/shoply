@@ -3,17 +3,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:shoply/core/common/widgets/button/elevated_button.dart';
-import 'package:shoply/core/common/widgets/check_box.dart';
 import 'package:shoply/core/common/widgets/input_field.dart';
-import 'package:shoply/core/helpers/extensions.dart';
 import 'package:shoply/core/constants/app_assets.dart';
-import 'package:shoply/core/constants/colors.dart';
 import 'package:shoply/core/constants/sizes.dart';
 import 'package:shoply/core/constants/texts.dart';
+import 'package:shoply/core/helpers/extensions.dart';
 import 'package:shoply/features/authentication/presentation/manager/controller/sign_up_controller.dart';
 import 'package:shoply/features/authentication/presentation/views/widgets/auth_container.dart';
-import 'package:shoply/features/authentication/presentation/views/widgets/sign_in_with_divider.dart';
 import 'package:shoply/features/authentication/presentation/views/widgets/check_box.dart';
+import 'package:shoply/features/authentication/presentation/views/widgets/sign_in_with_divider.dart';
 
 class SignUpScreen extends StatelessWidget {
   const SignUpScreen({super.key});

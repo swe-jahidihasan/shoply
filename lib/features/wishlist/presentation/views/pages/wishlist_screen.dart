@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:shoply/core/constants/sizes.dart';
 import 'package:shoply/features/wishlist/presentation/manager/controller/wishlist_controller.dart';
 import 'package:shoply/features/wishlist/presentation/views/widgets/wish_list_item_cart.dart';
 
@@ -12,6 +14,10 @@ class WishlistScreen extends StatelessWidget {
 
     return Scaffold(
       body: SingleChildScrollView(
+        padding: EdgeInsets.symmetric(
+          horizontal: JSizes.md.w,
+          vertical: JSizes.md.h,
+        ),
         child: Column(
           children: [
             // wishlist item cart

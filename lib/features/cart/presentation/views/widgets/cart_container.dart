@@ -38,7 +38,7 @@ class CartContainer extends StatelessWidget {
               borderRadius: BorderRadius.circular(JSizes.borderRadiusSm.r),
               color: Color(0xFFF2F2F2),
             ),
-            child: Image.asset(image),
+            child: Image.asset(image,height: 30.h,width: 40.w,),
           ),
           10.horizontalSpace,
           Expanded(
